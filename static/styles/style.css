@@ -1,0 +1,5 @@
+.logoimage {
+    width: 4rem;
+    height: 4rem;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
