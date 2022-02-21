@@ -11,16 +11,15 @@
 
 
 {% block title %}
-    - Home
+{#    - {{ room.name }}#}
 {% endblock %}
 
 {% block content %}
-    <h2>Home</h2>
+    <h2>You're  now in "{{ room.name }}" room.</h2>
     {% for room in rooms %}
         <div>
-            <span>{{ room.topic.name }} - added by - {{ room.host.username }}</span>
-            <h5>{{ room.id }} - <a href="{% url 'home:room' room.id   %}">{{ room.name }}</a></h5>
 
+            <h5>{{ room.id }} - {{ room.name }}</h5>
         </div>
     {% endfor %}
 {% endblock %}
